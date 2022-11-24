@@ -1,0 +1,12 @@
+#include<stdio.h>
+int main()
+{
+int a, b, *p, *q;
+printf("Enter two numbers\n");
+scanf("%d%d",&a,&b);
+p=&a;//assigning the memory location of variabl a
+q=&b;//assigning the memory location of variable b
+printf("%u%u",p,q);//printing the memory location of variables a and b
+*p=&a;
+*q=&b;
+printf("%d",*p+*q);//printing the sum of a and b using refrence of a and b
